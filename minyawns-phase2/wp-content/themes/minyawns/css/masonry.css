@@ -1,0 +1,60 @@
+ .isotope * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* force scrollbar, prevents initial gap */
+
+
+img{max-width:100%;
+height:auto;}
+
+/* ---- isotope ---- */
+
+
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.item,
+.grid-sizer {
+  width: 48%;
+  border:4px solid #fff;
+}
+
+.item {
+  float: left;
+  }
+
+@media screen and (max-width:768px){
+  .item,.grid-sizer{
+      width:25%;
+  }
+ }  
+  
+@media screen and (max-width:640px){
+  .item,.grid-sizer{
+      width:33.3%;
+  }
+ }
+
+
+@media screen and (max-width:480px){
+  .item,.grid-sizer{
+      width:50%;
+  }
+ }
+
+@media screen and (max-width:321px){
+  .item,.grid-sizer{
+      width:100%;
+  }
+ }
+

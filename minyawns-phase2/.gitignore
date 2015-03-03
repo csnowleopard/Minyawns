@@ -1,0 +1,15 @@
+.htaccess
+.buildpath
+wp-config.php
+.externalToolBuilders
+node_modules
+wp-content/themes/minyawns/cssb/images/icons/.svn/prop-base
+wp-content/themes/minyawns/cssb/images/icons/.svn
+wp-content/uploads
+/nbproject/private/
+nbproject
+.settings/
+.project
+Thumbs.db
+htaccess
+wp-config .php

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minyawns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	 <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+	 <link href="css/main.css" rel="stylesheet">
+	 <link href="css/data_grids_main.css" rel="stylesheet">
+	  <link href="css/data_grids_style_01.css" rel="stylesheet">
+	 <link href="css/data_grids_tooltip.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page_bg">
+   <div class=" pbl mtn">
+      <div class="bottom-menu  bottom-menu-inverse top-menu">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand">
+              <a href="#"><img src="images/logo.png" style=" margin-top: 10px; "/> </a>
+            </div>
+			<div class="span6">
+			
+            </div>
+            <div class="span1">
+			
+            </div>
+
+            <div class="span2 notify">
+				<div id="logged-in">
+				<a id="user-popdown" href="javascript:void(0);" >
+					<img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150"> <b class="caret"></b>
+				</a>
+			</div>
+			</div>
+			<div class="span1">
+				<a href="#" class="help_icon"><i class="icon-question-sign"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /bottom-menu-inverse -->
+
+    </div>
+ <div class="container">
+	<div class="main-content ">
+		<div class="alert alert-info " style="width:70%;margin:auto;border: 10px solid rgba(204, 204, 204, 0.57);margin-top:10%;margin-bottom:10%">
+		<h4 style="text-align:center">Your account is successfully verified.</h4>
+		<hr>
+		<img src="images/big-minyawns.png"/ style="margin:auto;display:block;">
+		</div>
+
+  </div>
+  
+</div>
+	<hr style="border-top:1px solid #C7C3C3;">
+		  <ul class="footer_menu">
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Careers</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">Tech City</a></li>
+			  <li><a href="#">Directory</a></li>
+		  </ul>
+		  <div class="social-icon"><a href="#"><img src="images/twiiter.png"/></a>&nbsp;&nbsp;<a href="#"><img src="images/facebook.png"/></a></div>
+		  <div class="site_link">All rights reserved 2013 @ Minyawn</div>	
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="js/application.js"></script>
+	<script src="js/awm-custom.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('#user-popdown').popover(
+				{
+					placement : 'bottom',
+					html : true,
+					content : '<div id="profile-data"><a href="http://greekconnect.com/members/admin/profile/change-avatar/" class="change-avatar"><img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150" /><span>Change Avatar</span></a><div class="profile-data-display"><h4>Test User1</h4><p class="muted">@admin</p></div><div class="profile-actions"><span><a href="#" class="popup_link"><i class="icon-user"></i> View Profile</a>&nbsp;<a href="#" class="popup_link"><i class="icon-cog"></i> Settings</a>&nbsp;<a href="#" class="popup_link"><i class="icon-unlock"></i> Logout</a></span></div></div>',
+				}
+			);
+		});
+    </script>
+
+	
+  </body>
+</html>

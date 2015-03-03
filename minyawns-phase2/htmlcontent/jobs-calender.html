@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minyawns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	 <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+	 <link href="css/main.css" rel="stylesheet">
+	 <link href="css/data_grids_main.css" rel="stylesheet">
+	  <link href="css/data_grids_style_01.css" rel="stylesheet">
+	 <link href="css/data_grids_tooltip.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+	  <link href="css/dailog.css" rel="stylesheet" type="text/css" />
+    <link href="css/calendar.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/dp.css" rel="stylesheet" type="text/css" />   
+    <link href="css/alert.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/main-cal.css" rel="stylesheet" type="text/css" /> 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page_bg">
+   <div class=" pbl mtn">
+      <div class="bottom-menu  bottom-menu-inverse top-menu">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand">
+              <a href="#"><img src="images/logo.png" style=" margin-top: 10px; "/> </a>
+            </div>
+			<div class="span6">
+			
+            </div>
+            <div class="span1">
+			
+            </div>
+
+            <div class="span2 notify">
+				<div id="logged-in">
+				<a id="user-popdown" href="javascript:void(0);" >
+					<img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150"> <b class="caret"></b>
+				</a>
+			</div>
+			</div>
+			<div class="span1">
+				<a href="#" class="help_icon"><i class="icon-question-sign"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /bottom-menu-inverse -->
+
+    </div>
+ <div class="container">
+	 <ul class="nav nav-tabs nav-append-content jobs_menu">
+            <li class="active"><a href="#tab1">Browse Jobs</a></li>
+            <li><a href="#tab2">My Jobs</a></li>
+           </ul> <!-- /tabs -->
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+				<div class="row-fluid"> 
+						<div class="span9"> 
+											    <div style=" width: 97%; ">
+
+      <div id="calhead" style="padding-left:1px;padding-right:1px;">          
+            <div class="cHead"><div class="ftitle"></div>
+            <div id="loadingpannel" class="ptogtitle loadicon" style="display: none;">Loading data...</div>
+             <div id="errorpannel" class="ptogtitle loaderror" style="display: none;">Sorry, could not load your data, please try again later</div>
+            </div>          
+            
+            <div id="caltoolbar" class="ctoolbar">
+              <div id="faddbtn" class="fbutton">
+                <div><span title='Click to Create New Event' class="addcal">
+
+                New Event                
+                </span></div>
+            </div>
+            <div class="btnseparator"></div>
+             <div id="showtodaybtn" class="fbutton">
+                <div><span title='Click to back to today ' class="showtoday">
+                Today</span></div>
+            </div>
+              <div class="btnseparator"></div>
+
+            <div id="showdaybtn" class="fbutton ">
+                <div><span title='Day' class="showdayview">Day</span></div>
+            </div>
+              <div  id="showweekbtn" class="fbutton ">
+                <div><span title='Week' class="showweekview">Week</span></div>
+            </div>
+              <div  id="showmonthbtn" class="fbutton fcurrent ">
+                <div><span title='Month' class="showmonthview">Month</span></div>
+
+            </div>
+            <div class="btnseparator"></div>
+              <div  id="showreflashbtn" class="fbutton">
+                <div><span title='Refresh view' class="showdayflash">Refresh</span></div>
+                </div>
+             <div class="btnseparator"></div>
+            <div id="sfprevbtn" title="Prev"  class="fbutton">
+              <span class="fprev"></span>
+
+            </div>
+            <div id="sfnextbtn" title="Next" class="fbutton">
+                <span class="fnext"></span>
+            </div>
+            <div class="fshowdatep fbutton">
+                    <div>
+                        <input type="hidden" name="txtshow" id="hdtxtshow" />
+                        <span id="txtdatetimeshow">Loading</span>
+
+                    </div>
+            </div>
+            
+            <div class="clear"></div>
+            </div>
+      </div>
+      <div >
+
+        <div class="t1 chromeColor">
+            &nbsp;</div>
+        <div class="t2 chromeColor">
+            &nbsp;</div>
+        <div id="dvCalMain" class="calmain printborder">
+            <div id="gridcontainer" style="overflow-y: visible;">
+            </div>
+        </div>
+        <div class="t2 chromeColor">
+
+            &nbsp;</div>
+        <div class="t1 chromeColor">
+            &nbsp;
+        </div>   
+        </div>
+     
+  </div>
+		
+						</div>
+						<div class="span3"> 
+				
+						</div>
+				</div>
+            </div>
+
+            <!-- /tabs -->
+            <div class="tab-pane" id="tab2">
+						 <div class="dialog dialog-success">
+				  Add a Job Listing 
+				 <a href="#myModal"  data-toggle="modal"> <button class="btn btn-primary btn-wide mll">
+					<i class="fui-mail"></i>
+					Add Jobs
+				  </button><a/>
+				</div>
+            </div>
+
+          </div> <!-- /tab-content -->
+		  <hr style="border-top:1px solid #C7C3C3;">
+		  <ul class="footer_menu">
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Careers</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">Tech City</a></li>
+			  <li><a href="#">Directory</a></li>
+		  </ul>
+		  <div class="social-icon"><a href="#"><img src="images/twiiter.png"/></a>&nbsp;&nbsp;<a href="#"><img src="images/facebook.png"/></a></div>
+		  <div class="site_link">All rights reserved 2013 @ Minyawn</div>
+</div>
+	<div id="myModal" class="modal main hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+  <div class="modal-header" >
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/delete.png"/></button>
+    <h4 id="myModalLabel" style="text-align:left; color:#8ed030;"> <i class="fui-mail"></i>  Add a Job </h4>
+  </div>
+  <div class="modal-body" style=" background: #F1F1F1; ">
+    <div class="row-fluid">
+		<div class="span12"> 
+		<form class="form-horizontal frm_job">
+			  <div class="control-group small">
+				<label class="control-label" for="inputtask">Tasks</label>
+				<div class="controls ">
+				  <input type="text" value="" placeholder="" class="span3">
+				</div>
+			  </div>
+			  <div class="control-group small">
+				<label class="control-label" for="inputtask">Start</label>
+				<div class="controls">
+				  <div class="input-prepend input-datepicker">
+              <button type="button" class="btn"><span class="fui-calendar"></span></button>
+              <input type="text" class="span1" value="14 March, 2013" id="datepicker-01">
+            </div>
+			  <input class="span2 timepicker" id="prependedInput-03" type="text" > &nbsp;PDT
+          </div>
+			  </div>
+			   <div class="control-group small">
+				<label class="control-label" for="inputtask">End</label>
+				<div class="controls">
+				  <div class="input-prepend input-datepicker">
+              <button type="button" class="btn"><span class="fui-calendar"></span></button>
+              <input type="text" class="span1" value="14 March, 2013">
+            </div>
+			  <input class="span2 timepicker" id="prependedInput-03" type="text" > &nbsp;PDT
+          </div>
+			  </div>
+			  <div class="control-group small">
+				<label class="control-label" for="inputtask">Required</label>
+				<div class="controls ">
+				  <input type="text" id="spinner-01" placeholder="" value="0" class="spinner">
+				</div>
+			  </div>
+			   <div class="control-group small">
+				<label class="control-label" for="inputtask">Location</label>
+				<div class="controls ">
+				 <input type="text" value="" placeholder="" class="span3">
+				</div>
+				</div>
+			 <div class="control-group small">
+				<label class="control-label" for="inputtask">Details</label>
+				<div class="controls ">
+				  <textarea class="span6" rows="10" cols="4" placeholder="Add comment..." style="height:70px;"></textarea>
+				</div>
+			</div>
+			<hr>
+			<a href="#fakelink" class="btn btn-large btn-block btn-inverse span4" style="float:right;">Submit</a>
+			</form>
+		</div>
+			 
+		
+	</div>
+  </div>
+  
+</div>
+		
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="js/application.js"></script>
+	<script src="js/awm-custom.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	
+	 <script src="src/Plugins/jquery.alert.js" type="text/javascript"></script>    
+    <script src="src/Plugins/jquery.ifrmdailog.js" defer="defer" type="text/javascript"></script>
+    <script src="src/Plugins/wdCalendar_lang_US.js" type="text/javascript"></script>    
+    <script src="src/Plugins/jquery.calendar.js" type="text/javascript"></script> 
+	<script type="text/javascript">
+        $(document).ready(function() {     
+           var view="month";          
+           
+            var DATA_FEED_URL = "php/datafeed.php";
+            var op = {
+                view: view,
+                theme:3,
+                showday: new Date(),
+                EditCmdhandler:Edit,
+                DeleteCmdhandler:Delete,
+                ViewCmdhandler:View,    
+                onWeekOrMonthToDay:wtd,
+                onBeforeRequestData: cal_beforerequest,
+                onAfterRequestData: cal_afterrequest,
+                onRequestDataError: cal_onerror, 
+                autoload:true,
+                url: DATA_FEED_URL + "?method=list",  
+                quickAddUrl: DATA_FEED_URL + "?method=add", 
+                quickUpdateUrl: DATA_FEED_URL + "?method=update",
+                quickDeleteUrl: DATA_FEED_URL + "?method=remove"        
+            };
+            var $dv = $("#calhead");
+            var _MH = document.documentElement.clientHeight;
+            var dvH = $dv.height() + 2;
+            op.height = _MH - dvH;
+            op.eventItems =[];
+
+            var p = $("#gridcontainer").bcalendar(op).BcalGetOp();
+            if (p && p.datestrshow) {
+                $("#txtdatetimeshow").text(p.datestrshow);
+            }
+            $("#caltoolbar").noSelect();
+            
+            $("#hdtxtshow").datepicker({ picker: "#txtdatetimeshow", showtarget: $("#txtdatetimeshow"),
+            onReturn:function(r){                          
+                            var p = $("#gridcontainer").gotoDate(r).BcalGetOp();
+                            if (p && p.datestrshow) {
+                                $("#txtdatetimeshow").text(p.datestrshow);
+                            }
+                     } 
+            });
+            function cal_beforerequest(type)
+            {
+                var t="Loading data...";
+                switch(type)
+                {
+                    case 1:
+                        t="Loading data...";
+                        break;
+                    case 2:                      
+                    case 3:  
+                    case 4:    
+                        t="The request is being processed ...";                                   
+                        break;
+                }
+                $("#errorpannel").hide();
+                $("#loadingpannel").html(t).show();    
+            }
+            function cal_afterrequest(type)
+            {
+                switch(type)
+                {
+                    case 1:
+                        $("#loadingpannel").hide();
+                        break;
+                    case 2:
+                    case 3:
+                    case 4:
+                        $("#loadingpannel").html("Success!");
+                        window.setTimeout(function(){ $("#loadingpannel").hide();},2000);
+                    break;
+                }              
+               
+            }
+            function cal_onerror(type,data)
+            {
+                $("#errorpannel").show();
+            }
+            function Edit(data)
+            {
+               var eurl="edit.php?id={0}&start={2}&end={3}&isallday={4}&title={1}";   
+                if(data)
+                {
+                    var url = StrFormat(eurl,data);
+                    OpenModelWindow(url,{ width: 600, height: 400, caption:"Manage  The Calendar",onclose:function(){
+                       $("#gridcontainer").reload();
+                    }});
+                }
+            }    
+            function View(data)
+            {
+                var str = "";
+                $.each(data, function(i, item){
+                    str += "[" + i + "]: " + item + "\n";
+                });
+                alert(str);               
+            }    
+            function Delete(data,callback)
+            {           
+                
+                $.alerts.okButton="Ok";  
+                $.alerts.cancelButton="Cancel";  
+                hiConfirm("Are You Sure to Delete this Event", 'Confirm',function(r){ r && callback(0);});           
+            }
+            function wtd(p)
+            {
+               if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+                $("#caltoolbar div.fcurrent").each(function() {
+                    $(this).removeClass("fcurrent");
+                })
+                $("#showdaybtn").addClass("fcurrent");
+            }
+            //to show day view
+            $("#showdaybtn").click(function(e) {
+                //document.location.href="#day";
+                $("#caltoolbar div.fcurrent").each(function() {
+                    $(this).removeClass("fcurrent");
+                })
+                $(this).addClass("fcurrent");
+                var p = $("#gridcontainer").swtichView("day").BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+            });
+            //to show week view
+            $("#showweekbtn").click(function(e) {
+                //document.location.href="#week";
+                $("#caltoolbar div.fcurrent").each(function() {
+                    $(this).removeClass("fcurrent");
+                })
+                $(this).addClass("fcurrent");
+                var p = $("#gridcontainer").swtichView("week").BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+
+            });
+            //to show month view
+            $("#showmonthbtn").click(function(e) {
+                //document.location.href="#month";
+                $("#caltoolbar div.fcurrent").each(function() {
+                    $(this).removeClass("fcurrent");
+                })
+                $(this).addClass("fcurrent");
+                var p = $("#gridcontainer").swtichView("month").BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+            });
+            
+            $("#showreflashbtn").click(function(e){
+                $("#gridcontainer").reload();
+            });
+            
+            //Add a new event
+            $("#faddbtn").click(function(e) {
+                var url ="edit.html";
+                OpenModelWindow(url,{ width: 500, height: 400, caption: "Create New Calendar"});
+            });
+            //go to today
+            $("#showtodaybtn").click(function(e) {
+                var p = $("#gridcontainer").gotoDate().BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+
+
+            });
+            //previous date range
+            $("#sfprevbtn").click(function(e) {
+                var p = $("#gridcontainer").previousRange().BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+
+            });
+            //next date range
+            $("#sfnextbtn").click(function(e) {
+                var p = $("#gridcontainer").nextRange().BcalGetOp();
+                if (p && p.datestrshow) {
+                    $("#txtdatetimeshow").text(p.datestrshow);
+                }
+            });
+            
+        });
+    </script> 
+	<script>
+	
+		(function($){
+			$(window).load(function(){
+				$("#content_1").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+			});
+		})(jQuery);
+		$("button").click(function(){
+		  $this("#list2 li div").remove();
+		});
+	</script>
+		<script>
+		(function($){
+			$(window).load(function(){
+				$("#content_2").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+			});
+		})(jQuery);
+	</script>
+<script>
+$('.collapse').live('show', function(){
+    $(this).parent().find('a').addClass('open'); //add active state to button on open
+});
+
+$('.collapse').live('hide', function(){
+    $(this).parent().find('a').removeClass('open'); //remove active state to button on close
+});
+</script>
+	
+	
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('#user-popdown').popover(
+				{
+					placement : 'bottom',
+					html : true,
+					content : '<div id="profile-data"><a href="http://greekconnect.com/members/admin/profile/change-avatar/" class="change-avatar"><img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150" /><span>Change Avatar</span></a><div class="profile-data-display"><h4>Test User1</h4><p class="muted">@admin</p></div><div class="profile-actions"><span><a href="#" class="popup_link"><i class="icon-user"></i> View Profile</a>&nbsp;<a href="#" class="popup_link"><i class="icon-cog"></i> Settings</a>&nbsp;<a href="#" class="popup_link"><i class="icon-unlock"></i> Logout</a></span></div></div>',
+				}
+			);
+		});
+    </script>
+
+	
+  </body>
+</html>

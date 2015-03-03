@@ -1,0 +1,29 @@
+{
+  "name": "Minyawns",
+  "version": "0.0.1",
+  "description": "Minyanws Project",
+  "main": "Gruntfile.js",
+  "themedir": "wp-content/themes/minyawns",
+  "env": "testing",
+  "scripts": {
+    "test": "default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajency/minyawns.git"
+  },
+  "keywords": [
+    "Minyawns",
+    "Backbone",
+    "Wordpress"
+  ],
+  "author": "Ajency Team",
+  "license": "Free",
+  "readmeFilename": "readme.html",
+  "gitHead": "a0a75a27d42025436e6c69778ce9a82a070ef1d3",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.6.1"
+  }
+}

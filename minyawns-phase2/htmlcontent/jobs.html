@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minyawns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	 <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+	 <link href="css/main.css" rel="stylesheet">
+	 <link href="css/data_grids_main.css" rel="stylesheet">
+	  <link href="css/data_grids_style_01.css" rel="stylesheet">
+	 <link href="css/data_grids_tooltip.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page_bg">
+   <div class=" pbl mtn">
+      <div class="bottom-menu  bottom-menu-inverse top-menu">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand">
+              <a href="#"><img src="images/logo.png" style=" margin-top: 10px; "/> </a>
+            </div>
+			<div class="span6">
+			
+            </div>
+            <div class="span1">
+			
+            </div>
+
+            <div class="span2 notify">
+				<div id="logged-in">
+				<a id="user-popdown" href="javascript:void(0);" >
+					<img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150"> <b class="caret"></b>
+				</a>
+			</div>
+			</div>
+			<div class="span1">
+				<a href="#" class="help_icon"><i class="icon-question-sign"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /bottom-menu-inverse -->
+
+    </div>
+ <div class="container">
+	 <ul class="nav nav-tabs nav-append-content jobs_menu">
+            <li class="active"><a href="#tab1">Browse Jobs</a></li>
+            <li><a href="#tab2">My Jobs</a></li>
+           </ul> <!-- /tabs -->
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+             	<section id="no-more-tables">
+	<table class="qlabs_grid_container tablesorter jobs_table Main-job">		
+		<thead>
+			<tr class="header_row">
+				<td colspan="7" class="header_cell">
+					<div class="row-fluid">
+						<div class="span7">
+							<i class="icon-calendar"></i><h3 class="page-title"> Months</h3> <!-- header label -->
+							JUN 2013
+						</div>
+						
+						<div class="span2">
+						  <select name="small" class="select-block select-role">
+							<option value="0">Today</option>
+							<option value="1">Tommorow</option>
+							<option value="2">This Week</option>
+							<option value="3">This Month</option>
+						</select>
+						</div>
+						<div class="span3">
+						<div class="control-group small ctrl-grp">
+            <div class="input-append">
+              <input class="span2" id="appendedInputButton-04" type="text" placeholder="Search">
+              <button class="btn btn-small" type="button"><span class="fui-search"></span></button>
+            </div>
+          </div>
+					</div>
+					
+				</td>
+			</tr>
+			<tr class="subheader_row">
+				<th class="subheader_cell awm_exchange_service_tlt service_tlt headerSortDown">Logo</th>
+				<th class="subheader_cell awm_exchange_service_demand headerSortDown">Session Date</th>
+				<th class="subheader_cell awm_exchange_service_supply headerSortDown">Duration</th>
+				<th class="subheader_cell awm_exchange_service_discount headerSortDown">Wages</th>
+				<th class="subheader_cell awm_exchange_services_action">Progress</th>
+				<th class="subheader_cell awm_exchange_services_arrow">Action</th>
+			</tr>
+		</thead>
+		<tbody class="data_container">
+			<tr class="data_even">
+   <!-- table 1-->
+   <td colspan="7">
+      <table class="ins_table">
+	    
+         <tr class="data_even ">
+		 
+            <td class="data_cell awm_service_title" >
+               <img src="images/walmart-logo.png"/>
+			   <b class="logo-name">Walmart</b>
+			 </td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="0">30</span>
+               <div>
+                  May<b  class="service-client-demand" data-count="0">2013</b>
+               </div>
+			   <div class="demand"> Monday</div>
+			</td>
+            <td  class="data_cell awm_service_supply duration_mob">
+               <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">11:00</span>
+				   <div>
+					 pm
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">2:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+			  </td>
+            <td  class="data_cell awm_service_discount">
+               <ins><span class="amount">$100</span></ins>
+            </td>
+          <td  class="data_cell awm_service_action">
+              
+			  <span class="label label-small label-success">Available</span>
+            </td>
+            <td  class="data_cell awm_service_arrow">
+              <a href="#collapse52" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				 
+               </a>
+             </td>
+			 	
+         </tr>
+	
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse52" style="display:none" class="expand">
+                  <div class="column_100">
+                     <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >Walmart</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a>  </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr class="data_even">
+   <!-- table 1-->
+   <td colspan="7">
+      <table class="ins_table">
+         <tr class="data_even">
+            <td class="data_cell awm_service_title" >
+                <img src="images/livefyre-logo.png"/>
+				 <b class="logo-name">Livefyre</b>
+			</td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="1">10</span>
+               <div>
+                 Jun<b  class="service-client-demand" data-count="1">2013</b>
+               </div>
+			   <div class="demand"> Thusrday</div>
+            </td>
+            <td  class="data_cell awm_service_supply duration_mob">
+                 <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">8:00</span>
+				   <div>
+					 am
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">12:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+            </td>
+            <td  class="data_cell awm_service_discount">
+               <ins><span class="amount">$28</span></ins>
+            </td>
+           <td  class="data_cell awm_service_action">
+                <span class="label label-small label-success">Available</span>
+            </td>
+            <td  class="data_cell awm_service_arrow">
+               <a href="#collapse53" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				 
+               </a>
+            
+            </td>
+         </tr>
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse53" style="display:none" class="expand">
+                  <div class="column_100">
+                 <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >Lifefyre</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"><a href="#" class="request_link">  Anna Pollard</a>  </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr class="data_even">
+   <!-- table 1-->
+   <td colspan="7">
+      <table class="ins_table">
+         <tr class="data_even">
+            <td  class="data_cell awm_service_title" >
+              <img src="images/UbuntuLogo.png"/>
+			   <b class="logo-name">Ubunto</b>
+            </td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="1">05</span>
+               <div>
+                 May<b  class="service-client-demand" data-count="1">2013</b>
+               </div>
+			    <div class="demand"> Sunday</div>
+            </td>
+            <td  class="data_cell awm_service_supply duration_mob">
+				      <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">10:00</span>
+				   <div>
+					 am
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">12:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+            </td>
+            <td  class="data_cell awm_service_discount">
+              <ins><span class="amount">$400</span></ins>
+            </td>
+			<td  class="data_cell awm_service_action">
+          <span class="label label-small label-important">No Available</span>
+            </td>
+            <td  class="data_cell awm_service_arrow">
+               <a href="#collapse54" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				  
+               </a>
+           </td>
+         </tr>
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse54" style="display:none" class="expand">
+                  <div class="column_100">
+                      <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >Ubunto</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"><a href="#" class="request_link"> <a href="#" class="request_link">  Anna Pollard</a>  </a></div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+  <td colspan="7">
+      <table class="ins_table">
+         <tr class="data_even">
+            <td  class="data_cell awm_service_title" >
+               <img src="images/CIRC-logo_300dpi_PNG.png"/>
+			    <b class="logo-name">Circ</b>
+			 </td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="0">12</span>
+               <div>
+                  May<b  class="service-client-demand" data-count="0">2013</b>
+               </div>
+			   <div class="demand"> Friday</div>
+			</td>
+            <td  class="data_cell awm_service_supply duration_mob">
+                  <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">8:00</span>
+				   <div>
+					 am
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">12:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+			  </td>
+            <td   class="data_cell awm_service_discount">
+               <ins><span class="amount">$25</span></ins>
+            </td>
+          <td  class="data_cell awm_service_action">
+              <span class="label label-small label-success">Available</span>
+            </td>
+            <td  class="data_cell awm_service_arrow">
+               <a href="#collapse55" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				 
+               </a>
+             </td>
+         </tr>
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse55" style="display:none" class="expand">
+                  <div class="column_100">
+                     <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >CIRC</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a> </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr class="data_even">
+   <!-- table 1-->
+   <td colspan="7">
+      <table class="ins_table">
+         <tr class="data_even">
+            <td  class="data_cell awm_service_title" >
+                <img src="images/livefyre-logo.png"/>
+				 <b class="logo-name">Livefyre</b>
+			</td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="1">10</span>
+               <div>
+                 Jun<b  class="service-client-demand" data-count="1">2013</b>
+               </div>
+			     <div class="demand"> Sunday</div>
+            </td>
+            <td  class="data_cell awm_service_supply duration_mob">
+                    <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">8:00</span>
+				   <div>
+					 am
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">12:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+            </td>
+            <td class="data_cell awm_service_discount">
+               <ins><span class="amount">$28</span></ins>
+            </td>
+           <td  class="data_cell awm_service_action">
+                <span class="label label-small label-success">Available</span>
+            </td>
+            <td class="data_cell awm_service_arrow">
+               <a href="#collapse57" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				 
+               </a>
+            
+            </td>
+         </tr>
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse57" style="display:none" class="expand">
+                  <div class="column_100">
+                 <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >Lifefyre</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a> </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr class="data_even">
+   <!-- table 1-->
+   <td colspan="7">
+      <table class="ins_table">
+         <tr class="data_even">
+            <td  class="data_cell awm_service_title" >
+              <img src="images/bitly_logo.png"/>
+			   <b class="logo-name">Bitly</b>
+            </td>
+            <td  class="data_cell awm_service_demand">
+               <span class="service-total-demand" data-count="1">05</span>
+               <div>
+                 May<b  class="service-client-demand" data-count="1">2013</b>
+               </div>
+			     <div class="demand"> Wednesday</div>
+            </td>
+            <td  class="data_cell awm_service_supply duration_mob">
+				      <div class="row-fluid">
+			  <div class="span5 mob-botm">
+				<span data-count="0" class="total-exchange-count">8:00</span>
+				   <div>
+					 am
+				   </div>
+			    </div>
+			  <div class="span2">
+				<b class="time-bold">to</b>
+			</div>
+			<div class="span5">
+				 <span data-count="0" class="total-exchange-count">12:00</span>
+					<div>
+					pm
+					</div>
+			 </div>
+			   </div>
+            </td>
+            <td   class="data_cell awm_service_discount">
+              <ins><span class="amount">$400</span></ins>
+            </td>
+			<td  class="data_cell awm_service_action">
+          <span class="label label-small label-important">No Available</span>
+            </td>
+            <td  class="data_cell awm_service_arrow">
+               <a href="#collapse58" class="nav-toggle">
+                  <div class="arrow-down">
+                  </div>
+				 
+               </a>
+           </td>
+         </tr>
+         <tr class="expanded">
+            <td colspan="7">
+               <input id="row_1" name="#" type="checkbox"/>
+               <div id="collapse58" style="display:none" class="expand">
+                  <div class="column_100">
+                      <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                        <thead>
+                           <tr class="header_row">
+                              <td class="header_cell">
+                                 <h4 >Bitly</h4>
+                              </td>
+                           </tr>
+                        </thead>
+                        <tbody class="data_container">
+                           <tr class="odd">
+                              <td class="data_cell awm_single_service_name">
+                                <div class="row-fluid">
+									<div class="span9">
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a>  </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+										</div>
+										<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+										</div>
+											<div class="row-fluid minywans_list">
+										<div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+									</div>
+									</div>
+									<div class="span3">
+										<img src="images/arrow-left.png"/>
+										<a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+									</div>
+								</div>
+                              </td>
+                            </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>		</tbody>
+	</table>
+	<div class="pagination" style=" margin-left: 263px; ">
+              <ul>
+                <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+                <li class="active"><a href="#fakelink">1</a></li>
+                <li><a href="#fakelink">2</a></li>
+                <li><a href="#fakelink">3</a></li>
+                <li><a href="#fakelink">4</a></li>
+                <li><a href="#fakelink">5</a></li>
+                <li><a href="#fakelink">6</a></li>
+                <li><a href="#fakelink">7</a></li>
+                <li><a href="#fakelink">8</a></li>
+                <li><a href="#fakelink">9</a></li>
+                <li><a href="#fakelink">10</a></li>
+                <li class="pagination-dropdown dropup">
+                  <i class="dropdown-arrow"></i>
+                  <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fui-triangle-up"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#fakelink">10&ndash;20</a></li>
+                    <li><a href="#fakelink">20&ndash;30</a></li>
+                    <li><a href="#fakelink">40&ndash;50</a></li>
+                  </ul>
+                </li>
+                <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+              </ul>
+            </div> <!-- /pagination -->
+	</section>
+            </div>
+
+            <!-- /tabs -->
+            <div class="tab-pane" id="tab2">
+						 <div class="dialog dialog-success">
+				  Add a Job Listing 
+				 <a href="addjob.html"> <button class="btn btn-primary btn-wide mll">
+					<i class="fui-mail"></i>
+					Add Jobs
+				  </button><a/>
+				</div>
+            </div>
+
+          </div> <!-- /tab-content -->
+		  <hr style="border-top:1px solid #C7C3C3;">
+		  <ul class="footer_menu">
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Careers</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">Tech City</a></li>
+			  <li><a href="#">Directory</a></li>
+		  </ul>
+		  <div class="social-icon"><a href="#"><img src="images/twiiter.png"/></a>&nbsp;&nbsp;<a href="#"><img src="images/facebook.png"/></a></div>
+		  <div class="site_link">All rights reserved 2013 @ Minyawn</div>
+</div>
+
+		
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="js/application.js"></script>
+	<script src="js/awm-custom.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('#user-popdown').popover(
+				{
+					placement : 'bottom',
+					html : true,
+					content : '<div id="profile-data"><a href="http://greekconnect.com/members/admin/profile/change-avatar/" class="change-avatar"><img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150" /><span>Change Avatar</span></a><div class="profile-data-display"><h4>Test User1</h4><p class="muted">@admin</p></div><div class="profile-actions"><span><a href="#" class="popup_link"><i class="icon-user"></i> View Profile</a>&nbsp;<a href="#" class="popup_link"><i class="icon-cog"></i> Settings</a>&nbsp;<a href="#" class="popup_link"><i class="icon-unlock"></i> Logout</a></span></div></div>',
+				}
+			);
+		});
+    </script>
+
+	
+  </body>
+</html>

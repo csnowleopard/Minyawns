@@ -1,0 +1,1119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Minyawns</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!-- Loading Bootstrap -->
+                <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+                    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+                        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+                            <!-- Loading Flat UI -->
+                            <link href="css/flat-ui.css" rel="stylesheet">
+                                <link href="css/style.css" rel="stylesheet">
+                                    <link href="css/main.css" rel="stylesheet">
+                                        <link href="css/data_grids_main.css" rel="stylesheet">
+                                            <link href="css/data_grids_style_01.css" rel="stylesheet">
+                                                <link href="css/data_grids_tooltip.css" rel="stylesheet">
+                                                    <link rel="shortcut icon" href="images/favicon.ico">
+                                                        <style type="text/css">
+                                                            /* ROUNDED TWO */
+                                                            .single-jobs .minyawns-grid .thumbnails .span3 .thumbnail .dwn-btn {
+                                                                position: absolute;
+                                                                bottom: 0px;
+                                                                width: 89%;
+                                                            }
+                                                            .minyans-select{
+                                                                border: 2px solid #23CF1C;
+                                                                background:url(images/selectminyawns.png)no-repeat;
+                                                                background-position: 10px 10px;
+                                                            }
+                                                            .roundedTwo {
+                                                                line-height: 25px;
+                                                                padding-left: 16px;
+
+                                                                height: 28px;
+                                                                background: #fcfff4;
+
+                                                                background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+                                                                background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+                                                                background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+                                                                background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+                                                                background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+                                                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+                                                                margin: 20px auto;
+
+                                                                -webkit-border-radius: 50px;
+                                                                -moz-border-radius: 50px;
+                                                                border-radius: 50px;
+
+                                                                -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+                                                                -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+                                                                box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+                                                                position: relative;
+                                                            }
+                                                            .roundedTwo input{
+                                                                visibility: hidden !important;
+                                                            }
+                                                            .roundedTwo label {
+                                                                cursor: pointer;
+                                                                position: absolute;
+                                                                width: 20px;
+                                                                height: 20px;
+
+                                                                -webkit-border-radius: 50px;
+                                                                -moz-border-radius: 50px;
+                                                                border-radius: 50px;
+                                                                left: 4px;
+                                                                top: 4px;
+
+                                                                -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+                                                                -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+                                                                box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+
+                                                                background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+                                                                background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+                                                                background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+                                                                background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+                                                                background: linear-gradient(top, #222 0%, #45484d 100%);
+                                                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+                                                            }
+
+                                                            .roundedTwo label:after {
+                                                                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                                                                filter: alpha(opacity=0);
+                                                                opacity: 0;
+                                                                content: '';
+                                                                position: absolute;
+                                                                width: 9px;
+                                                                height: 5px;
+                                                                background: transparent;
+                                                                top: 5px;
+                                                                left: 4px;
+                                                                border: 3px solid #fcfff4;
+                                                                border-top: none;
+                                                                border-right: none;
+
+                                                                -webkit-transform: rotate(-45deg);
+                                                                -moz-transform: rotate(-45deg);
+                                                                -o-transform: rotate(-45deg);
+                                                                -ms-transform: rotate(-45deg);
+                                                                transform: rotate(-45deg);
+                                                            }
+
+                                                            .roundedTwo label:hover::after {
+                                                                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+                                                                filter: alpha(opacity=30);
+                                                                opacity: 0.3;
+                                                            }
+
+                                                            .roundedTwo input[type=checkbox]:checked + label:after {
+                                                                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                                                                filter: alpha(opacity=100);
+                                                                opacity: 1;
+                                                            }
+
+                                                        </style>
+
+                                                        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+                                                        <!--[if lt IE 9]>
+                                                          <script src="js/html5shiv.js"></script>
+                                                        <![endif]-->
+                                                        </head>
+                                                        <body class="page_bg">
+                                                            <div class=" pbl mtn">
+                                                                <div class="bottom-menu  bottom-menu-inverse top-menu">
+                                                                    <div class="container">
+                                                                        <div class="row">
+                                                                            <div class="span2 brand">
+                                                                                <a href="#"><img src="images/logo.png" style=" margin-top: 10px; "/> </a>
+                                                                            </div>
+                                                                            <div class="span6">
+
+                                                                            </div>
+                                                                            <div class="span1">
+
+                                                                            </div>
+
+                                                                            <div class="span2 notify">
+                                                                                <div id="logged-in">
+                                                                                    <a id="user-popdown" href="javascript:void(0);" >
+                                                                                        <img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150"> <b class="caret"></b>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="span1">
+                                                                                <a href="#" class="help_icon"><i class="icon-question-sign"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> <!-- /bottom-menu-inverse -->
+
+                                                            </div>
+                                                            <div class="container">
+                                                                <ul class="nav nav-tabs nav-append-content jobs_menu">
+                                                                    <li ><a href="#tab1">Browse Jobs</a></li>
+                                                                    <li class="active"><a href="#tab2">My Jobs</a></li>
+                                                                </ul> <!-- /tabs -->
+
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane " id="tab1">
+                                                                        <section id="no-more-tables">
+                                                                            <table class="qlabs_grid_container tablesorter jobs_table">		
+                                                                                <thead>
+                                                                                    <tr class="header_row">
+                                                                                        <td colspan="7" class="header_cell">
+                                                                                            <div class="row-fluid">
+                                                                                                <div class="span7">
+                                                                                                    <i class="icon-calendar"></i><h3 class="page-title"> Months</h3> <!-- header label -->
+                                                                                                    JUN 2013
+                                                                                                </div>
+
+                                                                                                <div class="span2">
+                                                                                                    <select name="small" class="select-block select-role">
+                                                                                                        <option value="0">Today</option>
+                                                                                                        <option value="1">Tommorow</option>
+                                                                                                        <option value="2">This Week</option>
+                                                                                                        <option value="3">This Month</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                                <div class="span3">
+                                                                                                    <div class="control-group small ctrl-grp">
+                                                                                                        <div class="input-append">
+                                                                                                            <input class="span2" id="appendedInputButton-04" type="text" placeholder="Search">
+                                                                                                                <button class="btn btn-small" type="button"><span class="fui-search"></span></button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="subheader_row">
+                                                                                        <th class="subheader_cell awm_exchange_service_tlt service_tlt headerSortDown">Logo</th>
+                                                                                        <th class="subheader_cell awm_exchange_service_demand headerSortDown">Session Date</th>
+                                                                                        <th class="subheader_cell awm_exchange_service_supply headerSortDown">Duration</th>
+                                                                                        <th class="subheader_cell awm_exchange_service_discount headerSortDown">Wages</th>
+                                                                                        <th class="subheader_cell awm_exchange_services_action">Progress</th>
+                                                                                        <th class="subheader_cell awm_exchange_services_arrow">Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody class="data_container">
+                                                                                    <tr class="data_even">
+                                                                                        <!-- table 1-->
+                                                                                        <td colspan="7">
+                                                                                            <table class="ins_table">
+
+                                                                                                <tr class="data_even ">
+
+                                                                                                    <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                        <img src="images/walmart-logo.png"/>
+                                                                                                    </td>
+                                                                                                    <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                        <span class="service-total-demand" data-count="0">30</span>
+                                                                                                        <div>
+                                                                                                            May<b  class="service-client-demand" data-count="0">2013</b>
+                                                                                                        </div>
+                                                                                                        <div class="demand"> Monday</div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                        <div class="row-fluid">
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">11:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="span2">
+                                                                                                                <b class="time-bold">to</b>
+                                                                                                            </div>
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">2:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                        <ins><span class="amount">$1000</span></ins>
+                                                                                                    </td>
+                                                                                                    <td data-title="Action "  class="data_cell awm_service_action">
+
+                                                                                                        <span class="label label-small label-success">Available</span>
+                                                                                                    </td>
+                                                                                                    <td class="data_cell awm_service_arrow">
+                                                                                                        <a href="#collapse52" class="nav-toggle">
+                                                                                                            <div class="arrow-down">
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr class="expanded">
+                                                                                                    <td colspan="7">
+                                                                                                        <input id="row_1" name="#" type="checkbox"/>
+                                                                                                        <div id="collapse52" style="display:none" class="expand">
+                                                                                                            <div class="column_100">
+                                                                                                                <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                    <thead>
+                                                                                                                        <tr class="header_row">
+                                                                                                                            <td class="header_cell">
+                                                                                                                                <h4 >Walmart</h4>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody class="data_container">
+                                                                                                                        <tr class="odd">
+                                                                                                                            <td class="data_cell awm_single_service_name">
+                                                                                                                                <div class="row-fluid">
+                                                                                                                                    <div class="span9">
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a>  </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="span3">
+                                                                                                                                        <img src="images/arrow-left.png"/>
+                                                                                                                                        <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="data_even">
+                                                                                        <!-- table 1-->
+                                                                                        <td colspan="7">
+                                                                                            <table class="ins_table">
+                                                                                                <tr class="data_even">
+                                                                                                    <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                        <img src="images/livefyre-logo.png"/>
+                                                                                                    </td>
+                                                                                                    <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                        <span class="service-total-demand" data-count="1">10</span>
+                                                                                                        <div>
+                                                                                                            June<b  class="service-client-demand" data-count="1">2013</b>
+                                                                                                        </div>
+                                                                                                        <div class="demand"> Thusrday</div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                        <div class="row-fluid">
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">8:00</span>
+                                                                                                                <div>
+                                                                                                                    am
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="span2">
+                                                                                                                <b class="time-bold">to</b>
+                                                                                                            </div>
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">12:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                        <ins><span class="amount">$28</span></ins>
+                                                                                                    </td>
+                                                                                                    <td data-title="Action "  class="data_cell awm_service_action">
+                                                                                                        <span class="label label-small label-success">Available</span>
+                                                                                                    </td>
+                                                                                                    <td class="data_cell awm_service_arrow">
+                                                                                                        <a href="#collapse53" class="nav-toggle">
+                                                                                                            <div class="arrow-down">
+                                                                                                            </div>
+                                                                                                        </a>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="expanded">
+                                                                                                    <td colspan="7">
+                                                                                                        <input id="row_1" name="#" type="checkbox"/>
+                                                                                                        <div id="collapse53" style="display:none" class="expand">
+                                                                                                            <div class="column_100">
+                                                                                                                <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                    <thead>
+                                                                                                                        <tr class="header_row">
+                                                                                                                            <td class="header_cell">
+                                                                                                                                <h4 >Lifefyre</h4>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody class="data_container">
+                                                                                                                        <tr class="odd">
+                                                                                                                            <td class="data_cell awm_single_service_name">
+                                                                                                                                <div class="row-fluid">
+                                                                                                                                    <div class="span9">
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Requested by :</b></div><div class="span9"><a href="#" class="request_link">  Anna Pollard</a>  </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="span3">
+                                                                                                                                        <img src="images/arrow-left.png"/>
+                                                                                                                                        <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="data_even">
+                                                                                        <!-- table 1-->
+                                                                                        <td colspan="7">
+                                                                                            <table class="ins_table">
+                                                                                                <tr class="data_even">
+                                                                                                    <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                        <img src="images/UbuntuLogo.png"/>
+                                                                                                    </td>
+                                                                                                    <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                        <span class="service-total-demand" data-count="1">05</span>
+                                                                                                        <div>
+                                                                                                            May<b  class="service-client-demand" data-count="1">2013</b>
+                                                                                                        </div>
+                                                                                                        <div class="demand"> Sunday</div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                        <div class="row-fluid">
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">10:00</span>
+                                                                                                                <div>
+                                                                                                                    am
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="span2">
+                                                                                                                <b class="time-bold">to</b>
+                                                                                                            </div>
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">12:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                        <ins><span class="amount">$400</span></ins>
+                                                                                                    </td>
+                                                                                                    <td data-title="Action "  class="data_cell awm_service_action">
+                                                                                                        <span class="label label-small label-important">No Available</span>
+                                                                                                    </td>
+                                                                                                    <td class="data_cell awm_service_arrow">
+                                                                                                        <a href="#collapse54" class="nav-toggle">
+                                                                                                            <div class="arrow-down">
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="expanded">
+                                                                                                    <td colspan="7">
+                                                                                                        <input id="row_1" name="#" type="checkbox"/>
+                                                                                                        <div id="collapse54" style="display:none" class="expand">
+                                                                                                            <div class="column_100">
+                                                                                                                <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                    <thead>
+                                                                                                                        <tr class="header_row">
+                                                                                                                            <td class="header_cell">
+                                                                                                                                <h4 >Ubunto</h4>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody class="data_container">
+                                                                                                                        <tr class="odd">
+                                                                                                                            <td class="data_cell awm_single_service_name">
+                                                                                                                                <div class="row-fluid">
+                                                                                                                                    <div class="span9">
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Requested by :</b></div><div class="span9"><a href="#" class="request_link"> <a href="#" class="request_link">  Anna Pollard</a>  </a></div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="span3">
+                                                                                                                                        <img src="images/arrow-left.png"/>
+                                                                                                                                        <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <td colspan="7">
+                                                                                        <table class="ins_table">
+                                                                                            <tr class="data_even">
+                                                                                                <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                    <img src="images/CIRC-logo_300dpi_PNG.png"/>
+                                                                                                </td>
+                                                                                                <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                    <span class="service-total-demand" data-count="0">12</span>
+                                                                                                    <div>
+                                                                                                        May<b  class="service-client-demand" data-count="0">2013</b>
+                                                                                                    </div>
+                                                                                                    <div class="demand"> Friday</div>
+                                                                                                </td>
+                                                                                                <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                    <div class="row-fluid">
+                                                                                                        <div class="span5">
+                                                                                                            <span data-count="0" class="total-exchange-count">8:00</span>
+                                                                                                            <div>
+                                                                                                                am
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="span2">
+                                                                                                            <b class="time-bold">to</b>
+                                                                                                        </div>
+                                                                                                        <div class="span5">
+                                                                                                            <span data-count="0" class="total-exchange-count">12:00</span>
+                                                                                                            <div>
+                                                                                                                pm
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                    <ins><span class="amount">$25</span></ins>
+                                                                                                </td>
+                                                                                                <td data-title="Action "  class="data_cell awm_service_action">
+                                                                                                    <span class="label label-small label-success">Available</span>
+                                                                                                </td>
+                                                                                                <td class="data_cell awm_service_arrow">
+                                                                                                    <a href="#collapse55" class="nav-toggle">
+                                                                                                        <div class="arrow-down">
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="expanded">
+                                                                                                <td colspan="7">
+                                                                                                    <input id="row_1" name="#" type="checkbox"/>
+                                                                                                    <div id="collapse55" style="display:none" class="expand">
+                                                                                                        <div class="column_100">
+                                                                                                            <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                <thead>
+                                                                                                                    <tr class="header_row">
+                                                                                                                        <td class="header_cell">
+                                                                                                                            <h4 >CIRC</h4>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </thead>
+                                                                                                                <tbody class="data_container">
+                                                                                                                    <tr class="odd">
+                                                                                                                        <td class="data_cell awm_single_service_name">
+                                                                                                                            <div class="row-fluid">
+                                                                                                                                <div class="span9">
+                                                                                                                                    <div class="row-fluid minywans_list">
+                                                                                                                                        <div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a> </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="row-fluid minywans_list">
+                                                                                                                                        <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="row-fluid minywans_list">
+                                                                                                                                        <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="row-fluid minywans_list">
+                                                                                                                                        <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div class="span3">
+                                                                                                                                    <img src="images/arrow-left.png"/>
+                                                                                                                                    <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                    </tr>
+                                                                                    <tr class="data_even">
+                                                                                        <!-- table 1-->
+                                                                                        <td colspan="7">
+                                                                                            <table class="ins_table">
+                                                                                                <tr class="data_even">
+                                                                                                    <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                        <img src="images/livefyre-logo.png"/>
+                                                                                                    </td>
+                                                                                                    <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                        <span class="service-total-demand" data-count="1">10</span>
+                                                                                                        <div>
+                                                                                                            June<b  class="service-client-demand" data-count="1">2013</b>
+                                                                                                        </div>
+                                                                                                        <div class="demand"> Sunday</div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                        <div class="row-fluid">
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">8:00</span>
+                                                                                                                <div>
+                                                                                                                    am
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="span2">
+                                                                                                                <b class="time-bold">to</b>
+                                                                                                            </div>
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">12:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                        <ins><span class="amount">$28</span></ins>
+                                                                                                    </td>
+                                                                                                    <td data-title="Action "  class="data_cell awm_service_action">
+                                                                                                        <span class="label label-small label-success">Available</span>
+                                                                                                    </td>
+                                                                                                    <td class="data_cell awm_service_arrow">
+                                                                                                        <a href="#collapse57" class="nav-toggle">
+                                                                                                            <div class="arrow-down">
+                                                                                                            </div>
+                                                                                                        </a>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="expanded">
+                                                                                                    <td colspan="7">
+                                                                                                        <input id="row_1" name="#" type="checkbox"/>
+                                                                                                        <div id="collapse57" style="display:none" class="expand">
+                                                                                                            <div class="column_100">
+                                                                                                                <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                    <thead>
+                                                                                                                        <tr class="header_row">
+                                                                                                                            <td class="header_cell">
+                                                                                                                                <h4 >Lifefyre</h4>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody class="data_container">
+                                                                                                                        <tr class="odd">
+                                                                                                                            <td class="data_cell awm_single_service_name">
+                                                                                                                                <div class="row-fluid">
+                                                                                                                                    <div class="span9">
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a> </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="span3">
+                                                                                                                                        <img src="images/arrow-left.png"/>
+                                                                                                                                        <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="data_even">
+                                                                                        <!-- table 1-->
+                                                                                        <td colspan="7">
+                                                                                            <table class="ins_table">
+                                                                                                <tr class="data_even">
+                                                                                                    <td data-title="Services" class="data_cell awm_service_title" >
+                                                                                                        <img src="images/bitly_logo.png"/>
+                                                                                                    </td>
+                                                                                                    <td data-title="Demand" class="data_cell awm_service_demand">
+                                                                                                        <span class="service-total-demand" data-count="1">05</span>
+                                                                                                        <div>
+                                                                                                            May<b  class="service-client-demand" data-count="1">2013</b>
+                                                                                                        </div>
+                                                                                                        <div class="demand"> Wednesday</div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Supply" class="data_cell awm_service_supply">
+                                                                                                        <div class="row-fluid">
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">8:00</span>
+                                                                                                                <div>
+                                                                                                                    am
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="span2">
+                                                                                                                <b class="time-bold">to</b>
+                                                                                                            </div>
+                                                                                                            <div class="span5">
+                                                                                                                <span data-count="0" class="total-exchange-count">12:00</span>
+                                                                                                                <div>
+                                                                                                                    pm
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td data-title="Price"  class="data_cell awm_service_discount">
+                                                                                                        <ins><span class="amount">$400</span></ins>
+                                                                                                    </td>
+                                                                                                    <td data-title="Action "  class="data_cell awm_service_action">
+                                                                                                        <span class="label label-small label-important">No Available</span>
+                                                                                                    </td>
+                                                                                                    <td class="data_cell awm_service_arrow">
+                                                                                                        <a href="#collapse58" class="nav-toggle">
+                                                                                                            <div class="arrow-down">
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="expanded">
+                                                                                                    <td colspan="7">
+                                                                                                        <input id="row_1" name="#" type="checkbox"/>
+                                                                                                        <div id="collapse58" style="display:none" class="expand">
+                                                                                                            <div class="column_100">
+                                                                                                                <table class="qlabs_grid_container awm_single_services ins_table service_tlt " width="100%">
+                                                                                                                    <thead>
+                                                                                                                        <tr class="header_row">
+                                                                                                                            <td class="header_cell">
+                                                                                                                                <h4 >Bitly</h4>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody class="data_container">
+                                                                                                                        <tr class="odd">
+                                                                                                                            <td class="data_cell awm_single_service_name">
+                                                                                                                                <div class="row-fluid">
+                                                                                                                                    <div class="span9">
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Requested by :</b></div><div class="span9"> <a href="#" class="request_link">  Anna Pollard</a>  </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Location :</b></div><div class="span9">  Paccar Hall, 1st Floor NE Stevens Way, Seattle </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Details :</b></div><div class="span9">  We will need 3 workers to set up chairs and tables and help direct traffic for our event. Please wear business casual and a red tie </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="row-fluid minywans_list">
+                                                                                                                                            <div class="span3 "><b>Tags :</b></div><div class="span9">  <span class="label">Event</span><span class="label">Labour</span> </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="span3">
+                                                                                                                                        <img src="images/arrow-left.png"/>
+                                                                                                                                        <a href="#fakelink" class="btn btn-large btn-block btn-success btn-apply">Apply Job</a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>		</tbody>
+                                                                            </table>
+                                                                            <div class="pagination" style=" margin-left: 263px; ">
+                                                                                <ul>
+                                                                                    <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+                                                                                    <li class="active"><a href="#fakelink">1</a></li>
+                                                                                    <li><a href="#fakelink">2</a></li>
+                                                                                    <li><a href="#fakelink">3</a></li>
+                                                                                    <li><a href="#fakelink">4</a></li>
+                                                                                    <li><a href="#fakelink">5</a></li>
+                                                                                    <li><a href="#fakelink">6</a></li>
+                                                                                    <li><a href="#fakelink">7</a></li>
+                                                                                    <li><a href="#fakelink">8</a></li>
+                                                                                    <li><a href="#fakelink">9</a></li>
+                                                                                    <li><a href="#fakelink">10</a></li>
+                                                                                    <li class="pagination-dropdown dropup">
+                                                                                        <i class="dropdown-arrow"></i>
+                                                                                        <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                                                                            <i class="fui-triangle-up"></i>
+                                                                                        </a>
+                                                                                        <ul class="dropdown-menu">
+                                                                                            <li><a href="#fakelink">10&ndash;20</a></li>
+                                                                                            <li><a href="#fakelink">20&ndash;30</a></li>
+                                                                                            <li><a href="#fakelink">40&ndash;50</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+                                                                                </ul>
+                                                                            </div> <!-- /pagination -->
+                                                                        </section>
+                                                                    </div>
+
+                                                                    <!-- /tabs -->
+                                                                    <div class="tab-pane active" id="tab2">
+                                                                        <div class="breadcrumb-text">
+                                                                            <p>
+                                                                                <a href="myjobs.html">My Jobs</a>
+                                                                                <a href="myjobs.html"> Job List</a>
+                                                                                Livefyre
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="row-fluid list-jobs single-jobs">
+                                                                            <div class="span12 jobs-details">
+                                                                                <div class="span2 img-logo"> <img src="images/livefyre-logo.png"/> </div>
+                                                                                <div class="span3 minyawns-select"><span>4</span>
+                                                                                    <div><b>Minyawns Have Applied</b></div> 
+                                                                                </div>
+                                                                                <div class="span3 jobs-date"> 
+                                                                                    <div class="posteddate"> Posted Date : <span>10 April 2013</span></div>
+                                                                                    <div class="jobsdate"> Jobs Date : <span>20 June 2013</span></div>
+                                                                                </div>
+                                                                                <div class="span3 job-duration">
+                                                                                    <div class="row-fluid">
+                                                                                        <div class="span5">
+                                                                                            <span data-count="0" class="total-exchange-count">11:00</span>
+                                                                                            <div>
+                                                                                                pm
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="span2">
+                                                                                            <b class="time-bold">to</b>
+                                                                                        </div>
+                                                                                        <div class="span5">
+                                                                                            <span data-count="0" class="total-exchange-count">2:00</span>
+                                                                                            <div>
+                                                                                                pm
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="span1 wages">
+                                                                                    $100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="span12 expand">
+                                                                                <div class="row-fluid jobdesc">
+                                                                                    <div class="span3 jobsimg"> <img src="images/livefyre-logo.png"/></div>
+                                                                                    <div class="span9 job-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</br></br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+
+                                                                                </div>
+                                                                                <hr>
+                                                                                    <div class="row-fluid minyawns-grid">
+                                                                                        <ul class="thumbnails">
+                                                                                            <li class="span3">
+                                                                                                <div class="thumbnail">
+
+                                                                                                    <div class="caption">
+                                                                                                        <img src="images/profile.jpg" />
+                                                                                                        <div class="rating">
+                                                                                                            <a href="#fakelink">
+                                                                                                                <i class="icon-thumbs-up"></i> 100
+                                                                                                            </a>
+
+                                                                                                            <a href="#fakelink"  class="icon-thumbs">
+                                                                                                                <i class="icon-thumbs-down"></i> 100
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                        <h4> Nullam Dolor</h4>
+                                                                                                        <div class="collage"> University of Washington Civil and Enviormental Engineering </div>
+                                                                                                        <div class="social-link">
+                                                                                                            Shenw@uv.edu -<a href="#"> LinkedIn </a> - <a href="#">Behance </a>
+                                                                                                        </div>
+                                                                                                        <span class="label label-small">Social media</span>
+                                                                                                        <span class="label label-small">Marketing </span>
+                                                                                                        <span class="label label-small">Writing Publishing online</span>
+                                                                                                        <span class="label label-small">Blogging</span>
+                                                                                                        <span class="label label-small">Data-entry</span>
+                                                                                                        <span class="label label-small">Brainstorming</span>
+                                                                                                        <span class="label label-small">Documentdrafting</span>
+                                                                                                        <hr>
+                                                                                                            <div class="dwn-btn">
+                                                                                                                <div class="roundedTwo">
+                                                                                                                    <input type="checkbox" value="None" id="rounded1" name="check"  />
+                                                                                                                    <label for="rounded1"> </label>Select Nullam Dollar
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li class="span3">
+                                                                                                <div class="thumbnail">
+
+                                                                                                    <div class="caption">
+                                                                                                        <img src="images/profile1.jpg" />
+                                                                                                        <div class="rating">
+                                                                                                            <a href="#fakelink">
+                                                                                                                <i class="icon-thumbs-up"></i> 100
+                                                                                                            </a>
+
+                                                                                                            <a href="#fakelink"  class="icon-thumbs">
+                                                                                                                <i class="icon-thumbs-down"></i> 100
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                        <h4>Cras Justo</h4>
+                                                                                                        <div class="collage"> University of Washington Civil and Enviormental Engineering </div>
+                                                                                                        <div class="social-link">
+                                                                                                            Justo@uv.edu -<a href="#"> LinkedIn </a> - <a href="#">Behance </a>
+                                                                                                        </div>
+                                                                                                        <span class="label label-small">Social media</span>
+                                                                                                        <span class="label label-small">Marketing </span>
+                                                                                                        <span class="label label-small">Writing Publishing online</span>
+                                                                                                        <span class="label label-small">Blogging</span>
+                                                                                                        <span class="label label-small">Data-entry</span>
+                                                                                                        <span class="label label-small">Brainstorming</span>
+                                                                                                        <span class="label label-small">Documentdrafting</span>
+                                                                                                        <hr>
+                                                                                                            <div class="dwn-btn">
+                                                                                                                <div class="roundedTwo">
+                                                                                                                    <input type="checkbox" value="None" id="rounded3" name="check"  />
+                                                                                                                    <label for="rounded3"> </label>Select Cras Justo
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li class="span3">
+                                                                                                <div class="thumbnail">
+
+                                                                                                    <div class="caption">
+                                                                                                        <img src="images/profile2.jpg" />
+                                                                                                        <div class="rating">
+                                                                                                            <a href="#fakelink">
+                                                                                                                <i class="icon-thumbs-up"></i> 100
+                                                                                                            </a>
+
+                                                                                                            <a href="#fakelink"  class="icon-thumbs">
+                                                                                                                <i class="icon-thumbs-down"></i> 100
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                        <h4>Lorem Lipsum</h4>
+                                                                                                        <div class="collage"> University of Washington Civil and Enviormental Engineering </div>
+                                                                                                        <div class="social-link">
+                                                                                                            Lipsum@uv.edu 
+                                                                                                        </div>
+                                                                                                        <span class="label label-small">Social media</span>
+                                                                                                        <span class="label label-small">Marketing </span>
+                                                                                                        <span class="label label-small">Writing Publishing online</span>
+                                                                                                        <span class="label label-small">Blogging</span>
+                                                                                                        <span class="label label-small">Data-entry</span>
+                                                                                                        <span class="label label-small">Brainstorming</span>
+                                                                                                        <span class="label label-small">Documentdrafting</span>
+                                                                                                        <hr>
+                                                                                                            <div class="dwn-btn">
+                                                                                                                <div class="roundedTwo">
+                                                                                                                    <input type="checkbox" value="None" id="rounded4" name="check"  />
+                                                                                                                    <label for="rounded4"> </label>Select Lorem Lipsum
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            <li class="span3">
+                                                                                                <div class="thumbnail minyans-select">
+
+                                                                                                    <div class="caption">
+                                                                                                        <img src="images/profile3.jpg" />
+                                                                                                        <div class="rating">
+                                                                                                            <a href="#fakelink">
+                                                                                                                <i class="icon-thumbs-up"></i> 100
+                                                                                                            </a>
+
+                                                                                                            <a href="#fakelink"  class="icon-thumbs">
+                                                                                                                <i class="icon-thumbs-down"></i> 100
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                        <h4>Donec id elit</h4>
+                                                                                                        <div class="collage"> University of Washington Civil and Enviormental Engineering </div>
+                                                                                                        <div class="social-link">
+                                                                                                            Donec@uv.edu - <a href="#">Behance </a>
+                                                                                                        </div>
+                                                                                                        <span class="label label-small">Social media</span>
+                                                                                                        <span class="label label-small">Marketing </span>
+                                                                                                        <span class="label label-small">Writing Publishing online</span>
+                                                                                                        <span class="label label-small">Blogging</span>
+                                                                                                        <span class="label label-small">Data-entry</span>
+                                                                                                        <span class="label label-small">Brainstorming</span>
+                                                                                                        <span class="label label-small">Documentdrafting</span>
+                                                                                                        <hr>
+                                                                                                            <div class="dwn-btn">
+                                                                                                                <div class="roundedTwo">
+                                                                                                                    <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+                                                                                                                    <label for="roundedTwo"> </label>Select Donec id elit
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </li>
+
+                                                                                        </ul>
+
+
+                                                                                    </div>
+                                                                                    <hr class="border-color">
+                                                                                        <img src="images/bottom-arrow.png" class="bottom-arrow" />
+                                                                                        <a href="#fakelink" class="btn btn-medium btn-block green-btn btn-success ">Confirm & Hire</a>
+
+                                                                                        </div>
+                                                                                        </div>
+
+
+
+                                                                                        </div>
+
+                                                                                        </div> <!-- /tab-content -->
+                                                                                        <hr style="border-top:1px solid #C7C3C3;">
+                                                                                            <ul class="footer_menu">
+                                                                                                <li><a href="#">About</a></li>
+                                                                                                <li><a href="#">Careers</a></li>
+                                                                                                <li><a href="#">Blog</a></li>
+                                                                                                <li><a href="#">Tech City</a></li>
+                                                                                                <li><a href="#">Directory</a></li>
+                                                                                            </ul>
+                                                                                            <div class="social-icon"><a href="#"><img src="images/twiiter.png"/></a>&nbsp;&nbsp;<a href="#"><img src="images/facebook.png"/></a></div>
+                                                                                            <div class="site_link">All rights reserved 2013 @ Minyawn</div>
+                                                                                            </div>
+                                                                                            <div id="myModal" class="modal main hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+                                                                                                <div class="modal-header" >
+                                                                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/delete.png"/></button>
+                                                                                                    <h4 id="myModalLabel" style="text-align:left; color:#8ed030;"> <i class="fui-mail"></i>  Add a Job </h4>
+                                                                                                </div>
+                                                                                                <div class="modal-body" style=" background: #F1F1F1; ">
+                                                                                                    <div class="row-fluid">
+                                                                                                        <div class="span12"> 
+                                                                                                            <form class="form-horizontal frm_job">
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">Tasks</label>
+                                                                                                                    <div class="controls ">
+                                                                                                                        <input type="text" value="" placeholder="" class="span3">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">Start</label>
+                                                                                                                    <div class="controls">
+                                                                                                                        <div class="input-prepend input-datepicker">
+                                                                                                                            <button type="button" class="btn"><span class="fui-calendar"></span></button>
+                                                                                                                            <input type="text" class="span1" value="14 March, 2013" id="datepicker-01">
+                                                                                                                        </div>
+                                                                                                                        <input class="span2 timepicker" id="prependedInput-03" type="text" > &nbsp;PDT
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">End</label>
+                                                                                                                    <div class="controls">
+                                                                                                                        <div class="input-prepend input-datepicker">
+                                                                                                                            <button type="button" class="btn"><span class="fui-calendar"></span></button>
+                                                                                                                            <input type="text" class="span1" value="14 March, 2013">
+                                                                                                                        </div>
+                                                                                                                        <input class="span2 timepicker" id="prependedInput-03" type="text" > &nbsp;PDT
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">Required</label>
+                                                                                                                    <div class="controls ">
+                                                                                                                        <input type="text" id="spinner-01" placeholder="" value="0" class="spinner">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">Location</label>
+                                                                                                                    <div class="controls ">
+                                                                                                                        <input type="text" value="" placeholder="" class="span3">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="control-group small">
+                                                                                                                    <label class="control-label" for="inputtask">Details</label>
+                                                                                                                    <div class="controls ">
+                                                                                                                        <textarea class="span6" rows="10" cols="4" placeholder="Add comment..." style="height:70px;"></textarea>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <hr>
+                                                                                                                    <a href="#fakelink" class="btn btn-large btn-block btn-inverse span4" style="float:right;">Submit</a>
+                                                                                                            </form>
+                                                                                                        </div>
+
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+
+                                                                                            <!-- Load JS here for greater good =============================-->
+                                                                                            <script src="js/jquery-1.8.3.min.js"></script>
+                                                                                            <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+                                                                                            <script src="js/jquery.ui.touch-punch.min.js"></script>
+                                                                                            <script src="js/bootstrap.min.js"></script>
+                                                                                            <script src="js/bootstrap-select.js"></script>
+                                                                                            <script src="js/bootstrap-switch.js"></script>
+                                                                                            <script src="js/flatui-checkbox.js"></script>
+                                                                                            <script src="js/flatui-radio.js"></script>
+                                                                                            <script src="js/jquery.tagsinput.js"></script>
+                                                                                            <script src="js/jquery.placeholder.js"></script>
+                                                                                            <script src="js/jquery.stacktable.js"></script>
+                                                                                            <script src="js/application.js"></script>
+                                                                                            <script src="js/awm-custom.js"></script>
+                                                                                            <script src="js/jquery.jcarousel.min.js"></script>
+                                                                                            <script>
+                                                                                                jQuery(document).ready(function() {
+                                                                                                    jQuery('#user-popdown').popover(
+                                                                                                            {
+                                                                                                                placement: 'bottom',
+                                                                                                                html: true,
+                                                                                                                content: '<div id="profile-data"><a href="http://greekconnect.com/members/admin/profile/change-avatar/" class="change-avatar"><img src="images/iconsult6.png" alt="Avatar Image" class="avatar user-1-avatar" width="150" height="150" /><span>Change Avatar</span></a><div class="profile-data-display"><h4>Test User1</h4><p class="muted">@admin</p></div><div class="profile-actions"><span><a href="#" class="popup_link"><i class="icon-user"></i> View Profile</a>&nbsp;<a href="#" class="popup_link"><i class="icon-cog"></i> Settings</a>&nbsp;<a href="#" class="popup_link"><i class="icon-unlock"></i> Logout</a></span></div></div>',
+                                                                                                            }
+                                                                                                    );
+                                                                                                });
+                                                                                            </script>
+
+
+                                                                                            </body>
+                                                                                            </html>
